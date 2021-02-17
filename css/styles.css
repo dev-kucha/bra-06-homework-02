@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'fontea3fdfa648b7ec0e4183621443f549e3';
+        
+        src:    url('https://nomail.com.ua/files/eot/ea3fdfa648b7ec0e4183621443f549e3.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/ea3fdfa648b7ec0e4183621443f549e3.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/ea3fdfa648b7ec0e4183621443f549e3.woff2') format('woff2');
+    }
+    
+@font-face {
+    font-family: 'TrebuchetMS';  src: local('TrebuchetMS'), url('https://nomail.com.ua/files/woff/ea3fdfa648b7ec0e4183621443f549e3.woff') format('woff');
+}
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body {
+    background-color: #fff;
+    font-family:'TrebuchetMS', Trebuchet, Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.container {
+    margin: auto;
+    display: block;
+    width: 98%;
+    height: 95vh;
+    background: linear-gradient(#383F41, #272C2E);;
+}
+
+header {
+    background-color: #474E50;
+    color: #E88B82;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+main {
+    margin-bottom: 35px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li label {
+    display: block;
+    max-width: 550px;
+    height: 50px;
+    padding-top: 18px;
+    padding-left: 20px;
+    color: #DDDFDD;
+    margin: auto;
+vertical-align: middle;
+}
+
+li:nth-child(2n-1) label {
+    background-color: #78778F;
+}
+li:nth-child(2n) label {
+    background-color: #85849A;
+}
+
+li label span + span {
+    font-size: x-small;
+    padding-left: 10px;
+}
+
+li span + span:before {
+    content: "(";
+}
+
+li span + span:after {
+    content: ")";
+}
+
+footer {
+    background-color: #474E50;
+    color: #E88B82;
+    text-align: center;
+    padding: 20px;
+    max-width: 550px;  
+    margin: auto;
+}
