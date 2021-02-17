@@ -56,11 +56,10 @@ li label {
     display: block;
     max-width: 550px;
     height: 50px;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-left: 20px;
-    color: #DDDFDD;
+    color: #D3D7DC;
     margin: auto;
-vertical-align: middle;
 }
 
 li:nth-child(2n-1) label {
@@ -70,18 +69,32 @@ li:nth-child(2n) label {
     background-color: #85849A;
 }
 
+li label:hover {
+    background-color: #5F6174;
+    border-top: #D3D7DC 1px dotted;
+    border-bottom: #D3D7DC 1px dotted;
+}
+
 li label span + span {
     font-size: x-small;
     padding-left: 10px;
 }
 
-li span + span:before {
+li span + .not-emty:before {
     content: "(";
 }
 
-li span + span:after {
+li span + .not-emty:after {
     content: ")";
 }
+
+input:checked + span {
+    text-decoration: line-through;
+  }
+
+  input:checked + span + span{
+    text-decoration: line-through;
+  }
 
 footer {
     background-color: #474E50;
